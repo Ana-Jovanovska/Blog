@@ -9,73 +9,75 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #f2f2f2;
+  background: #283149;
 }
 
-.post-container {
-  display: flex;
-  justify-content: center;
-  height: 250px;
-}
-
-.blog-post {
-  width: 700px;
-  height: 250px;
-  padding: 15px 15px;
-  background-color: #283149;
-  display: grid;
-  grid-template-columns: 33% 70%;
-  border-radius: 10px;
-}
-
-.blog-post_title {
-  font-size: 20px;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-  padding-left: 15px;
-  padding-bottom: 5px;
-}
-
-.blog-post_text {
-  font-size: 15px;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.blog-post_img img {
-  width: 235px;
-  height: 100%;
-  border-radius: 10px;
-}
-
-.blog-post_button_and_date {
-  display: flex;
-  justify-content: center;
+.container_page {
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
 }
 
-.blog-post_date {
-  font-size: 14px;
-  padding: 5px 5px 0px 5px;
-  margin-left: 14px;
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
   color: #ffffff;
 }
 
-.post-rating {
+main {
+  background: #3a476a;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+div img {
+  margin: 0;
+}
+
+div .text {
+  font-size: smaller;
+  color: #ffffff;
+  text-align: center;
+}
+
+.btn {
   display: flex;
   justify-content: center;
+  padding: 25px;
+}
+
+.btn button {
+  width: 130px;
+  height: 50px;
+  padding: 10px;
+  background-color: #3a476a;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /* Comment page*/
 
 .container {
-  background: #283149;
+  background: #3a476a;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   font-family: monospace;
   width: 500px;
   color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .head {
@@ -86,6 +88,8 @@ body {
 .text {
   margin: 10px 0;
   font-family: sans-serif;
+  display: flex;
+  justify-content: start;
 }
 
 .commentbox {
