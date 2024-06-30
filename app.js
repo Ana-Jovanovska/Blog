@@ -30,19 +30,19 @@ function addPost() {
     USERID.image = "photo/profile.jpg";
   } else {
     USERID.identity = true;
-    USERID.image = "/photo/user.jpg";
+    USERID.image = "photo/user.jpg";
   }
 
   USERID.message = userComment.value;
   USERID.date = new Date().toLocaleString();
   let published = `<div class="parents">
-              <img src="${USERID.image}">
-              <div>
-                  <h1>${USERID.name}</h1>
-                  <p>${USERID.message}</p>
-                  <span class="date">${USERID.date}</span>
-              </div>    
-          </div>`;
+            <img src="${USERID.image}">
+            <div>
+                <h1>${USERID.name}</h1>
+                <p>${USERID.message}</p>
+                <span class="date">${USERID.date}</span>
+            </div>    
+        </div>`;
 
   comments.innerHTML += published;
   userComment.value = "";
