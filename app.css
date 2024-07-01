@@ -10,12 +10,13 @@ body {
   justify-content: center;
   align-items: center;
   background: #283149;
+  font-family: sans-serif;
 }
 
 .container_page {
   width: 80%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 header {
@@ -39,41 +40,38 @@ main {
 .main-image {
   width: 100%;
   height: auto;
-  margin-bottom: 10px;
-}
-
-div img {
-  margin: 0;
+  padding-top: 10px;
 }
 
 div .text {
   font-size: smaller;
-  color: #ffffff;
-  text-align: center;
+  color: #ffffffaa;
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
   display: flex;
-  justify-content: center;
-  padding: 25px;
+  justify-content: end;
+  gap: 15px;
 }
 
 .btn button {
-  width: 130px;
-  height: 50px;
-  padding: 10px;
-  background-color: #3a476a;
-  color: #ffffff;
+  height: 40px;
+  width: 70px;
   border-radius: 10px;
+  border: 1px solid #00cfc8;
+  background: #3a476a;
+  color: #00cfc8;
   cursor: pointer;
 }
 
 /* Comment page*/
 
-.container {
+.container_comment {
   background: #3a476a;
   border-radius: 10px;
-  padding: 30px;
+  padding: 40px;
   font-family: monospace;
   width: 500px;
   color: #ffffff;
@@ -88,8 +86,6 @@ div .text {
 .text {
   margin: 10px 0;
   font-family: sans-serif;
-  display: flex;
-  justify-content: start;
 }
 
 .commentbox {
@@ -131,7 +127,6 @@ div .text {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  color: #808080;
 }
 
 .buttons button {
@@ -139,10 +134,11 @@ div .text {
   background: #3a476a;
   color: #00cfc8;
   border-radius: 5px;
+  border: 1px solid #00cfc8;
   cursor: pointer;
 }
 
-.buttons > button.abled {
+.buttons button.abled {
   background: #00cfc8;
   color: #fff;
 }
@@ -151,7 +147,7 @@ div .text {
   margin: 20px 0;
   font-size: 0.8em;
   font-family: Arial, sans-serif;
-  color: #808080;
+  color: #ffffff;
 }
 
 .policy a {
@@ -174,7 +170,7 @@ div .text {
   font-size: 0.9em;
 }
 
-.parents > img {
+.parents img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
